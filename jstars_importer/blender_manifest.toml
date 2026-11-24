@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "jstars_importer"
+version = "1.0.2"
+name = "J-Stars Victory VS+ Importer"
+tagline = "Import characters, motions and stages from your J-Stars disc"
+maintainer = "JStars-Blender contributors"
+type = "add-on"
+
+tags = ["Import-Export", "Animation", "Game Engine"]
+
+blender_version_min = "5.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+files = "Read the game disc image you select and keep a scan cache"
