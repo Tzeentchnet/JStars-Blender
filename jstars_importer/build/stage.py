@@ -5,11 +5,13 @@ A stage pack holds several .srd parts:
   mapNN_locator_obj.srd     prop library; one $TRE per prop model
   mapNN_knock_*.srd,
   mapNN_scatter_*.srd       break-apart debris templates (shown only when scenery breaks)
-  mapNN_sea00.srd, ...      extra parts
+  mapNN_sea00.srd           wave normal map of the generated water plane
+  mapNN_shader.srd          compiled RSX programs, one per material
   mapNN_texture.srd(+v)     shared textures
-and the param pack's mapNN_param_locator.srd places locator props:
-one $TRE node with a 4x4 matrix per instance, plus an RSI parameter
-``OpLocatorModelIndex`` = (file index, model index, instance).
+and the param pack's mapNN_param_locator.srd places locator props: one
+$TRE per placement group, one node with a 4x4 matrix per placement, and
+per-node rows in its Op* parameters (see _locator_instances and
+docs/FORMATS.md "Stages").
 """
 import re
 import struct
