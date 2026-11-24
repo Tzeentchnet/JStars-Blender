@@ -2,6 +2,9 @@
 
 Imports characters, skeletons, motions, materials, textures and stages directly from **your own** J-Stars Victory VS+ (PS3) disc image. No game data is included in this repository.
 
+> [!NOTE]
+> This project can be considered a companion to the work done in [jsp-vs-ex](https://github.com/Tsamiuy/jsp-vs-ex). Its notes on the game's container formats ($CMP, STPK, CPK layout) are the groundwork this importer builds on.
+
 ## Examples
 
 | Character import (Boa Hancock, idle motion) | Stage import (Soul Society) |
